@@ -1,0 +1,19 @@
+:- consult('hechos.pl').
+
+armado(personaje) :-
+    armado(personaje, _).
+
+solo_arma_blanca(personaje) :-
+    armado(personaje, cuchillo),
+    \+ armado(personaje, pistola).
+
+juntos(P1, P2) :-
+    encuentran(P1,Zona),
+    encuentran(P2, Zona),
+    P1 \= P2.
+
+en_zona_peligrosa(Personaje) :-
+    encuentran(Personaje, Zona),
+    (   dificultad(Zona, alta)
+    ;   dificultad(Zona, muy_alta)
+    ).

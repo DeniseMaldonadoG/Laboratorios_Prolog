@@ -1,0 +1,46 @@
+%personas
+agente(leon).
+estudiante(ashley).
+espia(ada).
+investigador(luis).
+
+% edades
+edad(leon, 27).
+edad(ashley, 20).
+edad(ada, 26).
+edad(luis, 32).
+
+%armas
+armado(leon, pistola).
+armado(leon, cuchillo).
+armado(ada, pistola).
+armado(luis, cuchillo).
+
+%enemigos
+enemigo(ganado).
+enemigo(regeneradores).
+
+%plagas
+infectado_por(ganado, las_plagas).
+infectado_por(regeneradores, las_plagas).
+
+%apariciones
+aparecen_en(ganado, pueblo).
+aparecen_en(ganado, castillo).
+aparecen_en(regeneradores, isla).
+
+%dificultades
+dificultad(pueblo, alta).
+dificultad(castillo, alta).
+dificultad(isla, muy_alta).
+
+%ubicacion
+encuentran(leon, pueblo).
+encuentran(luis, pueblo).
+encuentran(ada, pueblo).
+encuentran(ada, castillo).
+
+
+
+
+
